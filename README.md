@@ -1,19 +1,19 @@
-# [Gamemakin](https://gamemak.in) UE4 Style Guide() {
+# [Gamemakin](https://gamemak.in) UE4 Guida allo stile() {
 
-*A mostly reasonable approach to Unreal Engine 4*
+*Un approccio ragionevole ad Unreal Engine 4*
 
-Heavily inspired by the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
+Pesamente ispirato da [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
 
 [![Analytics](https://ga-beacon.appspot.com/UA-80567399-1/repo?useReferrer)](#) ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
 ## Unreal Engine 4 Linter Plugin
 
-An automated method of checking your project against this style guide is available for purchase at [the Unreal Engine marketplace](https://www.unrealengine.com/marketplace/linter). This plugin's source code will eventually be free, but in order to use with UE4 without building the engine from source code, please use the marketplace version.
+Un metodo automatizzato per controllare che il tuo progetto rispetti questa guida è disponibile all'acquisto sul [Marketplace di Unreal](https://www.unrealengine.com/marketplace/linter).
+Le sorgenti di questo plugin potrebbero essere gratis, ma per utilizzarlo su UE4 senza compilare le sorgenti acquistate la versione del marketplace.
 
-## Discuss This Style Guide
+## Discussioni sulla Guida
 
-Gamemakin LLC has a public Discord channel at http://discord.gamemak.in with a #linter channel if you'd like to discuss all things style guide and Linter plugin.
-
+Gamemakin LLC ha un canale pubblico Discord (http://discord.gamemak.in) con un canale #linter, se volete discutere le caratteristiche di questa guida o del plugin Linter.
 ## Linking To This Document
 
 Every section of this style guide is numbered for both easy reference and easy linking. You can link to any section directly by simply append a hash tag and the section number to the end of http://ue4.style
@@ -28,7 +28,7 @@ If you have made a notable fork or translation that is not suitable for a pull r
 * [Japanese Translation](https://github.com/akenatsu/ue4-style-guide/blob/master/README.jp.md) by akenatsu
 * [Chinese Translation](https://github.com/skylens-inc/ue4-style-guide/blob/master/README.md) by Beijing Skylens Tech.
 
-## Important Terminology
+## Important Terminology Terminologie Importanti
 
 <a name="terms-level-map"></a>
 ##### Levels/Maps
@@ -43,7 +43,7 @@ There are a few different ways you can name things. Here are some common casing 
 > ###### PascalCase
 >
 > Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
-> 
+>
 > ###### camelCase
 >
 > The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
@@ -58,13 +58,13 @@ There are a few different ways you can name things. Here are some common casing 
 The words 'variable' and 'property' in most contexts are interchangable. If they are both used together in the same context however:
 
 <a name="terms-property"></a>
-###### Property 
-Usually refers to a variable defined in a class. For example, if `BP_Barrel` had a variable `bExploded`, `bExploded` may be referred to as a property of `BP_Barrel`. 
+###### Property
+Usually refers to a variable defined in a class. For example, if `BP_Barrel` had a variable `bExploded`, `bExploded` may be referred to as a property of `BP_Barrel`.
 
 When in the context of a class, often used to imply accessing previously defined data.
 
 <a name="terms-variable"></a>
-###### Variable 
+###### Variable
 Usually refers to a variable defined as a function argument or a local variable inside a function.
 
 When in the context of a class, often used to convey discussion about its definition and what it will hold.
@@ -513,7 +513,7 @@ If one of your game characters is named 'Zoë', its folder name should be `Zoe`.
 
 Related to this, if your project has [unexplained issues](https://answers.unrealengine.com/questions/101207/undefined.html) and your computer's user name has a Unicode character (i.e. your name is `Zoë`), any project located in your `My Documents` folder will suffer from this issue. Often simply moving your project to something like `D:\Project` will fix these mysterious issues.
 
-Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,`, `*`, and `#` can also lead to unexpected and hard to track issues on other platforms, source control, and weaker engineering tools. 
+Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,`, `*`, and `#` can also lead to unexpected and hard to track issues on other platforms, source control, and weaker engineering tools.
 
 <a name="2.2"></a>
 <a name="structure-top-level"><a>
@@ -886,7 +886,7 @@ If a class has only a small number of variables, categories are not required.
 
 If a class has a moderate amount of variables (5-10), all `Editable` variables should have a non-default category assigned. A common category is `Config`.
 
-If a class has a large amount of variables, all `Editable` variables should be categorized into sub-categories using the category `Config` as the base category. Non-editable variables should be categorized into descriptive categories describing their usage. 
+If a class has a large amount of variables, all `Editable` variables should be categorized into sub-categories using the category `Config` as the base category. Non-editable variables should be categorized into descriptive categories describing their usage.
 
 > You can define sub-categories by using the pipe character `|`, i.e. `Config | Animations`.
 
@@ -1105,7 +1105,7 @@ The following nodes are not counted as they are deemed to not increase function 
 
 This rule applies more to public facing or marketplace blueprints, so that others can more easily navigate and consume your blueprint API.
 
-Simply, any function that has an access specificer of Public should have its description filled out. 
+Simply, any function that has an access specificer of Public should have its description filled out.
 
 <a name="3.3.5"></a>
 <a name="bp-graphs-funcs-plugin-category"></a>
@@ -1287,7 +1287,7 @@ It is normal during development for levels to occasionaly not have lighting buil
 <a name="levels-no-visible-z-fighting"></a>
 ### 6.3 No Player Visible Z Fighting ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
 
-Levels should not have any [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) in all areas visible to the player. 
+Levels should not have any [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) in all areas visible to the player.
 
 <a name="6.4"></a>
 <a name="levels-mp-rules"></a>
@@ -1345,7 +1345,7 @@ For example, `128x512`, `1024x1024`, `2048x1024`, `1024x2048`, `1x512`.
 
 All textures should be of a size appropriate for their standard use case. Appropriate texture density varies from project to project, but all textures within that project should have a consistent density.
 
-For example, if a project's texture density is 8 pixel per 1 unit, a texture that is meant to be applied to a 100x100 unit cube should be 1024x1024, as that is the closest power of 2 that matches the project's texture density. 
+For example, if a project's texture density is 8 pixel per 1 unit, a texture that is meant to be applied to a 100x100 unit cube should be 1024x1024, as that is the closest power of 2 that matches the project's texture density.
 
 <a name="7.3"></a>
 <a name="textures-max-size"></a>
