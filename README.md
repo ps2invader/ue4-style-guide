@@ -14,68 +14,69 @@ Le sorgenti di questo plugin potrebbero essere gratis, ma per utilizzarlo su UE4
 ## Discussioni sulla Guida
 
 Gamemakin LLC ha un canale pubblico Discord (http://discord.gamemak.in) con un canale #linter, se volete discutere le caratteristiche di questa guida o del plugin Linter.
-## Linking To This Document
+## Link a Questo Documento
 
-Every section of this style guide is numbered for both easy reference and easy linking. You can link to any section directly by simply append a hash tag and the section number to the end of http://ue4.style
-For example, if you want to send someone to the first principle of this style guide you would append `#0.1`, resulting in http://ue4.style#0.1.
+Tutte le sezioni di questa "guida allo stile" sono numerate per facilitare la referenziazione e il linking. Puoi linkare direttamente qualsiasi sezione semplicemente aggiungendo un has tag con il numero della sezione al link http://ue4.style.
+Per esempio, se vuoi inviare a qualcuno il primo principio di questa guida allora devi aggiugnere `#0.1`, il risultato sarà http://ue4.style#0.1.
 
-## Forks And Translations
+## Fork e Traduzioni
 
-If you have made a notable fork or translation that is not suitable for a pull request into this repo, please submit a pull request to add the fork or translation here.
+Se hai creato un fork degno di nota o una traduzione, questa non può essere inserita in questa repo, perfavore immetti una richiesta di pull per aggiungere il fork o la traduzione qui.
 
 * [Korean Translation](https://github.com/ymkim50/ue4-style-guide/blob/master/README_Kor.md) by ymkim50
 * [Russian Translation](https://github.com/CosmoMyzrailGorynych/ue4-style-guide-rus/blob/master/README.md) by CosmoMyzrailGorynych
 * [Japanese Translation](https://github.com/akenatsu/ue4-style-guide/blob/master/README.jp.md) by akenatsu
 * [Chinese Translation](https://github.com/skylens-inc/ue4-style-guide/blob/master/README.md) by Beijing Skylens Tech.
 
-## Important Terminology Terminologie Importanti
+## Terminologie Importanti
 
 <a name="terms-level-map"></a>
-##### Levels/Maps
+##### Livelli/Mappe
 
-The word 'map' generally refers to what the average person calls a 'level' and may be used interchangeably. See this term's history [here](https://en.wikipedia.org/wiki/Level_(video_gaming)).
+Il termine 'mappa' generalmente si riferisce a quello che le persone chiamano 'livello' e possono essere intercambiabili. vedi la storia del termine [qui](https://en.wikipedia.org/wiki/Level_(video_gaming)).
 
 <a name="terms-cases"></a>
-##### Cases
+##### Cases (Tenere conto del maiuscolo o minuscolo)
 
-There are a few different ways you can name things. Here are some common casing types:
+Ci sono differenti modi con cui puoi nominare qualcosa. Ecco alcune tipologie:
 
 > ###### PascalCase
 >
-> Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
+> Ogni parola ha l'iniziale maiuscola ed elimina gli spazi , e.s. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
 >
 > ###### camelCase
 >
-> The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
+> La prima lettera è sempre minuscola, ma tutte le altre parole hanno la maiuscola , e.s. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
 >
 > ###### Snake_case
 >
-> Words can arbitrarily start upper or lowercase but words are separated by an underscore, e.g. `desert_Eagle`, `Style_Guide`, `a_Series_of_Words`.
+> Le parole possono avere la maiuscola o minuscola in modo arbitrario e sono separate da un underscore _ , e.s. `desert_Eagle`, `Style_Guide`, `a_Series_of_Words`.
 
 <a name="terms-var-prop"></a>
-##### Variables / Properties
+##### Variabili / Proprietà
 
 The words 'variable' and 'property' in most contexts are interchangable. If they are both used together in the same context however:
+Le parole 'variabile' e 'proprietà' sono in molti contesti intercambiabili. Se però sono utilizzate insieme nello stesso contesto allora:
 
 <a name="terms-property"></a>
-###### Property
-Usually refers to a variable defined in a class. For example, if `BP_Barrel` had a variable `bExploded`, `bExploded` may be referred to as a property of `BP_Barrel`.
+###### Proprietà
+Generalmente si riferiscono a una variabile definita in una classe. Per esempio, se `BP_Barile` ha la variabile `bEsploso`, `bEsploso` si riferirà a una proprietà del `BP_Barile`
 
-When in the context of a class, often used to imply accessing previously defined data.
+Nel contesto di una classe, ci si riferisce a dati precedentemente definiti.
 
 <a name="terms-variable"></a>
-###### Variable
-Usually refers to a variable defined as a function argument or a local variable inside a function.
+###### Variabili
+Generalmente si riferisce a una variabile definita come argomento di una funzione o come variabile locale all'interno di una funzione.
 
-When in the context of a class, often used to convey discussion about its definition and what it will hold.
+Nel contesto di una classe è usata spesso per spiegare la sua definizione e che valore avrà. /*da verificare*/
 
 <a name="0"></a>
-## 0. Principles
+## 0. Principi
 
-These principles have been adapted from [idomatic.js style guide](https://github.com/rwaldron/idiomatic.js/).
+Questi principi sono stati adattati da [idomatic.js style guide](https://github.com/rwaldron/idiomatic.js/).
 
 <a name="0.1"></a>
-### 0.1 If your UE4 project already has a style guide, you should follow it.
+### 0.1 Se il tuo progetto UE4 ha già una guida allo stile, devi continuare a seguirla.
 
 If you are working on a project or with a team that has a pre-existing style guide, it should be respected.  Any inconsistency between an existing style guide and this guide should defer to the existing.
 
@@ -124,36 +125,36 @@ Gamemakin LLC is not a lawyer, but please don't introduce illegal actions and be
 
 <a name="anc"></a>
 <a name="1"></a>
-## 1. Asset Naming Conventions ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 1. Convenzioni Nomenclatura Asset ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
-Naming conventions should be treated as law. A project that conforms to a naming convention is able to have its assets managed, searched, parsed, and maintained with incredible ease.
+Le Convenzioni per la nomenlcatura dovrebberò essere legge. Un progetto conforme alle convenzioni permette di avere asset gestibili, ricercabili, analizzabili e mantenuti con una facilità incredibile.
 
-Most things are prefixed with prefixes being generally an acronym of the asset type followed by an underscore.
+Molte cose hanno dei prefissi che generalmente sono gli acronimi del tipo di asset seguiti da un underscore.
 
 <a name="base-asset-name"></a>
 <a name="1.1"></a>
-### 1.1 Base Asset Name - `Prefix_BaseAssetName_Variant_Suffix` ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 1.1 Nomencaltura base dell'asset - `Prefisso_NomenclaturaBase_Variante_Suffisso` ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
-All assets should have a _Base Asset Name_. A Base Asset Name represents a logical grouping of related assets. Any asset that is part of this logical group should follow the the standard of  `Prefix_BaseAssetName_Variant_Suffix`.
+Tutti gli asset dovrebbero avere una  _Nomenclatura di base_. La nomenclatura base rappresenta il raggruppamento logico degli asset collegati. Qualsiasi asset che fa parte di questo gruppo logico dovrebbe seguire lo standard  `Prefisso_NomenclaturaBase_Variante_Suffisso`.
 
-Keeping the pattern `Prefix_BaseAssetName_Variant_Suffix` and in mind and using common sense is generally enough to warrant good asset names. Here are some detailed rules regarding each element.
+Tenere a mente il pattern `Prefisso_NomenclaturaBase_Variante_Suffisso` e usare il buon senso, sono generalmente sufficienti per avere asset con una buona nomenclatura. Di seguito alcune regole dettagliate per ogni elemento.
 
-`Prefix` and `Suffix` are to be determined by the asset type through the following [Asset Name Modifier](#asset-name-modifiers) tables.
+`Prefisso` e `Suffisso` sono determinati dal tipo di asset seguendo la tabella [Modificatori Nomi Asset](#asset-name-modifiers) riportata di seguito.
 
-`BaseAssetName` should be determined by short and easily recognizable name related to the context of this group of assets. For example, if you had a character named Bob, all of Bob's assets would have the `BaseAssetName` of `Bob`.
+la `NomenclaturaBase` dovrebbe essere determinata da un nome sintetico e facilmente ricordabile che rappresenti il gruppo di asset. Per esempio, se hai un personaggio di nome Bob, allora tutti gli asset di Bob avranno la `NomenclaturaBase` --> `Bob`.
 
-For unique and specific variations of assets, `Variant` is either a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Bob had multiple skins these skins should still use `Bob` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Bob_Evil` and a 'Retro' skin would be referred to as `Bob_Retro`.
+Per variazioni uniche e specifiche dell'asset, la `Variante` dovrebbe sempre essere un nome sintetico che rappresenta facilmente un sottoset della Nomenclatura Base. Per esempio, se Bob ha diverse skin, queste useranno sempre `Bob` come `NomenclaturaBase` ma includeranno una `Variante`. Una skin 'Malvagia' verrà nomenclata come `Bob_Evil` mentre la skin 'Retro' avrà il nome `Bob_Retro`.
 
-For unique but generic variations of assets, `Variant` is a two digit number starting at `01`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_01`, `Rock_02`, `Rock_03`, etc. Except for rare exceptions, you should never require a three digit variant number. If you have more than 100 assets, you should consider organizing them with different base names or using multiple variant names.
+Per variazioni uniche ma generiche la `Variante` sarà composta da numeri a due cifre partendo da `01`. Per esempio, se un Environment artist genera delle rocce non descrittive , queste avranno il nome di `Rock_01`, `Rock_02`, `Rock_03`, etc. A parte rare eccezioni non si dovrebbe avere varianti numeriche a 3 cifre. Se avete più di 100 assets, dovreste considerare il fatto di organizzarli con differenti Nomenclature Base o usando diverse varianti.
 
-Depending on how your asset variants are made, you can chain together variant names. For example, if you are creating flooring assets for an Arch Viz project you should use the base name `Flooring` with chained variants such as `Flooring_Marble_01`, `Flooring_Maple_01`, `Flooring_Tile_Squares_01`.
+In base a come le varianti degli asset sono create è possibile concatenare i metodi. Per esempio, se state creando i pavimenti per un progetto Arch Viz dovreste usare il nome base `Pavimenti` con le varianti concatenate `Pavimenti_Marmo_01`, `Pavimenti_Acero_01`, `Pavimenti_Piastrelle_Quadrate_01`.
 
 <a name="1.1-examples"></a>
-#### 1.1 Examples
+#### 1.1 Esempi
 
 ##### 1.1e1 Bob
 
-| Asset Type              | Asset Name                                                 |
+| Tipologia Asset         | Nome Asset                                                 |
 | ----------------------- | ---------------------------------------------------------- |
 | Skeletal Mesh           | SK_Bob                                                     |
 | Material                | M_Bob                                                      |
@@ -161,9 +162,9 @@ Depending on how your asset variants are made, you can chain together variant na
 | Texture (Normal)        | T_Bob_N                                                    |
 | Texture (Evil Diffuse)  | T_Bob_Evil_D                                               |
 
-##### 1.1e2 Rocks
+##### 1.1e2 Rocce
 
-| Asset Type              | Asset Name                                                 |
+| Tipologia Asset         | Nome Asset                                                 |
 | ----------------------- | ---------------------------------------------------------- |
 | Static Mesh (01)        | S_Rock_01                                                  |
 | Static Mesh (02)        | S_Rock_02                                                  |
@@ -173,43 +174,43 @@ Depending on how your asset variants are made, you can chain together variant na
 
 <a name="asset-name-modifiers"></a>
 <a name="1.2"></a>
-### 1.2 Asset Name Modifiers ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2 Modificatori Nomi Asset ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-When naming an asset use these tables to determine the prefix and suffix to use with an asset's [Base Asset Name](#base-asset-name).
+Quando nomini un asset usa queste tabelle per determinare prefisso e suffisso da usare con la [NomenclaturaBase](#base-asset-name) dell'asset.
 
-#### Sections
+#### Sezioni
 
-> 1.2.1 [Most Common](#anc-common)
+> 1.2.1 [Più Comuni](#anc-common)
 
-> 1.2.2 [Animations](#anc-animations)
+> 1.2.2 [Animazioni](#anc-animations)
 
-> 1.2.3 [Artificial Intelligence](#anc-ai)
+> 1.2.3 [Intelligenza Artificiale](#anc-ai)
 
 > 1.2.4 [Blueprints](#anc-bp)
 
-> 1.2.5 [Materials](#anc-materials)
+> 1.2.5 [Materiali](#anc-materials)
 
 > 1.2.6 [Textures](#anc-textures)
 
-> 1.2.7 [Miscellaneous](#anc-misc)
+> 1.2.7 [Varie](#anc-misc)
 
 > 1.2.8 [Paper 2D](#anc-paper2d)
 
 > 1.2.9 [Physics](#anc-physics)
 
-> 1.2.10 [Sound](#anc-sound)
+> 1.2.10 [Suoni](#anc-sound)
 
-> 1.2.11 [User Interface](#anc-ui)
+> 1.2.11 [Interfaccia Utente](#anc-ui)
 
-> 1.2.12 [Effects](#anc-effects)
+> 1.2.12 [Effetti](#anc-effects)
 
 <a name="anc-common"></a>
 <a name="1.2.1"></a>
-#### 1.2.1 Most Common ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.1 Più Comuni ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| Level / Map             |            |            | [Should be in a folder called Maps.](#2.4) |
+| Level / Map             |            |            | [Dovrebbero essere in una cartella chiamata Mappe(Maps).](#2.4) |
 | Level (Persistent)      |            | _P         |                                  |
 | Level (Audio)           |            | _Audio     |                                  |
 | Level (Lighting)        |            | _Lighting  |                                  |
@@ -217,17 +218,17 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Level (Gameplay)        |            | _Gameplay  |                                  |
 | Blueprint               | BP_        |            |                                  |
 | Material                | M_         |            |                                  |
-| Static Mesh             | S_         |            | Many use SM_. We use S_.         |
+| Static Mesh             | S_         |            | Molti usano SM_. Noi usiamo S_.         |
 | Skeletal Mesh           | SK_        |            |                                  |
-| Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
+| Texture                 | T_         | _?         | Vedere [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
-#### 1.2.2 Animations ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.2 Animazioni ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Aim Offset              | AO_        |            |                                  |
 | Aim Offset 1D           | AO_        |            |                                  |
@@ -246,9 +247,9 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-ai"></a>
 <a name="1.2.3"></a>
-### 1.2.3 Artificial Intelligence ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.3 Intelligence Artificiale ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | AI Controller           | AIC_       |            |                                  |
 | Behavior Tree           | BT_        |            |                                  |
@@ -261,12 +262,12 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 <a name="1.2.4"></a>
 ### 1.2.4 Blueprints ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Blueprint               | BP_        |            |                                  |
 | Blueprint Function Library | BPFL_   |            |                                  |
 | Blueprint Interface     | BPI_       |            |                                  |
-| Blueprint Macro Library | BPML_      |            | Do not use macro libraries if possible. |
+| Blueprint Macro Library | BPML_      |            | Non usate librerie Macro se possibile. |
 | Enumeration             | E          |            | No underscore.                   |
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
@@ -274,9 +275,9 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
-### 1.2.5 Materials ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.5 Materiali ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Material                | M_         |            |                                  |
 | Material (Post Process) | PP_        |            |                                  |
@@ -290,7 +291,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 <a name="1.2.6"></a>
 ### 1.2.6 Textures ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
 | Texture (Diffuse/Albedo/Base Color)| T_ | _D      |                                  |
@@ -302,7 +303,7 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 | Texture (Emissive)      | T_         | _E         |                                  |
 | Texture (Mask)          | T_         | _M         |                                  |
 | Texture (Specular)      | T_         | _S         |                                  |
-| Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
+| Texture (Packed)        | T_         | _*         | Vedere le note successive sul [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
 | Render Target           | RT_        |            |                                  |
@@ -312,23 +313,23 @@ When naming an asset use these tables to determine the prefix and suffix to use 
 <a name="anc-textures-packing"></a>
 <a name="1.2.6.1"></a>
 #### 1.2.6.1 Texture Packing ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
-It is common practice to pack multiple layers of texture data into one texture. An example of this is packing Emissive, Roughness, Ambient Occlusion together as the Red, Green, and Blue channels of a texture respectively. To determine the suffix, simply stack the given suffix letters from above together, e.g. `_ERO`.
+È pratica comune quella di pacchettizzare più livelli texture dentro una singola texture. Un esempio è quello di pacchettizzare Emissive, Roughness, Ambiente Occlusion, insieme nei canali Rosso, Verde, Blu della texture. Per determinare il suffisso basta semplicemente concatenare le rispettive lettere Es . `_ERO`.
 
-> It is generally acceptable to include an Alpha/Opacity layer in your Diffuse/Albedo's alpha channel and as this is common practice, adding `A` to the `_D` suffix is optional.
+> È Generalmente accettabile, e anche pratica comune, includere il livello Alpha/Opacity all'interno del canale alpha della Diffuse/Albedo's. Aggiungere il suffisso `A` alla `_D` è opzionale.
 
-Packing 4 channels of data into a texture (RGBA) is not recommended except for an Alpha/Opacity mask in the Diffuse/Albedo's alpha channel as a texture with an alpha channel incurs more overhead than one without.
+Pacchettizzare 4 Canali dentro una singola texture (RGBA) non è raccomandato eccetto per l'Alpha/Opacity all'interno del canale Alpha della Diffues/Albedo's. Una texture del genere incorre in un sovraccarico maggiore rispetto ad una senza Alpha.
 
 <a name="anc-misc"></a>
 <a name="1.2.7"></a>
-### 1.2.7 Miscellaneous ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.7 Varie ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Animated Vector Field   | VFA_       |            |                                  |
 | Camera Anim             | CA_        |            |                                  |
 | Color Curve             | Curve_     | _Color     |                                  |
 | Curve Table             | Curve_     | _Table     |                                  |
-| Data Asset              | *_         |            | Prefix should be based on class. |
+| Data Asset              | *_         |            | Il Prefisso dovrebbe essere basato sulla classe. |
 | Data Table              | DT_        |            |                                  |
 | Float Curve             | Curve_     | _Float     |                                  |
 | Foliage Type            | FT_        |            |                                  |
@@ -338,7 +339,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Matinee Data            | Matinee_   |            |                                  |
 | Media Player            | MP_        |            |                                  |
 | Object Library          | OL_        |            |                                  |
-| Redirector              |            |            | These should be fixed up ASAP.   |
+| Redirector              |            |            | Deve essere riparato il più presto possibile.   |
 | Sprite Sheet            | SS_        |            |                                  |
 | Static Vector Field     | VF_        |            |                                  |
 | Touch Interface Setup   | TI_        |            |                                  |
@@ -348,7 +349,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 <a name="1.2.8"></a>
 ### 1.2.8 Paper 2D ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Paper Flipbook          | PFB_       |            |                                  |
 | Sprite                  | SPR_       |            |                                  |
@@ -360,7 +361,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 <a name="1.2.9"></a>
 ### 1.2.9 Physics ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Physical Material       | PM_        |            |                                  |
 | Physical Asset	  | PHYS_      |            |                                  |
@@ -368,26 +369,26 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 
 <a name="anc-sounds"></a>
 <a name="1.2.10"></a>
-### 1.2.10 Sounds ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.10 Suoni ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Dialogue Voice          | DV_        |            |                                  |
 | Dialogue Wave           | DW_        |            |                                  |
 | Media Sound Wave        | MSW_       |            |                                  |
 | Reverb Effect           | Reverb_    |            |                                  |
 | Sound Attenuation       | ATT_       |            |                                  |
-| Sound Class             |            |            | No prefix/suffix. Should be put in a folder called SoundClasses |
-| Sound Concurrency       |            | _SC        | Should be named after a SoundClass |
+| Sound Class             |            |            | No prefisso/suffisso, deve essere messo in una cartella chiamata SoundClasses |
+| Sound Concurrency       |            | _SC        | Deve essere nominato come la SoundClass |
 | Sound Cue               | A_         | _Cue       |                                  |
 | Sound Mix               | Mix_       |            |                                  |
 | Sound Wave              | A_         |            |                                  |
 
 <a name="anc-ui"></a>
 <a name="1.2.11"></a>
-### 1.2.11 User Interface ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.11 Interfaccia Utente ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Font                    | Font_      |            |                                  |
 | Slate Brush             | Brush_     |            |                                  |
@@ -396,25 +397,27 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 
 <a name="anc-effects"></a>
 <a name="1.2.12"></a>
-### 1.2.12 Effects ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.12 Effetti ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-| Asset Type              | Prefix     | Suffix     | Notes                            |
+| Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Particle System         | PS_        |            |                                  |
 | Material (Post Process) | PP_        |            |                                  |
 
 <a name="2"></a>
 <a name="structure"></a>
-## 2. Content Directory Structure ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+## 2. Contenuti: Struttura delle cartelle ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
-Equally important as asset names, the directory structure style of a project should be considered law. Asset naming conventions and content directory structure go hand in hand, and a violation of either causes unneeded chaos.
+Ugualmente importante quanto la nomenclatura degli asset, la struttura delle cartelle del progetto deve essere considerata legge. La nomencluatura degli asset e la struttura delle cartelle passano di mano in mano e qualsiasi violazione delle regole causa caos non necessario.
 
-There are multiple ways to lay out the content of a UE4 project. In this style, we will be using a structure that relies more on filtering and search abilities of the Content Browser for those working with assets to find assets of a specific type instead of another common structure that groups asset types with folders.
 
-> If you are using the prefix [naming convention](#1.2) above, using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
+Ci sono molteplici modi di impostare i contenuti di un progetto UE4. In questo stile useremo una struttura basata maggiormente sulle abilità di filtro e ricerca del Content Browser di unreal dando la possibilità di trovare assets di uno specifico tipo anzichè usare la classica struttura che raggruppa gli asset in specifiche cartelle.
+
+
+> Se usi i Prefissi della [Nomenclatura Asset](#1.2) descritta sopra, usare cartelle che contengono assets di tipo simile come `Meshes`, `Textures`, e `Materials` risulta una pratica ridondante in quanto il prefisso tiene ordinati i file che oltretutto possono essere filtrati ulteriormente dal content browser.
 
 <a name="2e1"><a>
-### 2e1 Example Project Content Structure
+### 2e1 Progetto Esempio: Struttura Contenuti
 <pre>
 |-- Content
     |-- <a href="#2.2">GenericShooter</a>
@@ -467,63 +470,64 @@ There are multiple ways to lay out the content of a UE4 project. In this style, 
             |-- Rifles
 </pre>
 
-The reasons for this structure are listed in the following sub-sections.
+La spiegazione di questa struttura è elencata nelle successive sottosezioni.
 
-### Sections
+### Sezioni
 
-> 2.1 [Folder Names](#structure-folder-names)
+> 2.1 [Nome Cartella](#structure-folder-names)
 
-> 2.2 [Top-Level Folders](#structure-top-level)
+> 2.2 [Cartelle Top-level](#structure-top-level)
 
-> 2.3 [Developer Folders](#structure-developers)
+> 2.3 [Cartelle Sviluppatore](#structure-developers)
 
-> 2.4 [Maps](#structure-maps)
+> 2.4 [Mappe](#structure-maps)
 
 > 2.5 [Core](#structure-core)
 
-> 2.6 [`Assets` and `AssetTypes`](#structure-assettypes)
+> 2.6 [`Assets` e `AssetTypes`](#structure-assettypes)
 
 > 2.7 [Large Sets](#structure-large-sets)
 
-> 2.8 [Material Library](#structure-material-library)
+> 2.8 [Libreria Materiali](#structure-material-library)
 
 
 <a name="2.1"></a>
 <a name="structure-folder-names"><a>
-### 2.1 Folder Names ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
+### 2.1 Nomi Cartelle ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
-These are common rules for naming any folder in the content structure.
+Ci sono delle regole comuni per nominare qualsiasi cartella della struttura contenuti.
 
 <a name="2.1.1"></a>
-#### 2.1.1 Always Use PascalCase[<sup>*</sup>](#terms-cases) ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.1 Usare Sempre Il PascalCase[<sup>*</sup>](#terms-cases) ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-PascalCase refers to starting a name with a capital letter and then instead of using spaces, every following word also starts with a capital letter. For example, `DesertEagle`, `RocketPistol`, and `ASeriesOfWords`.
+Con il PascalCase ci si riferisce nell'iniziare una parola con la lettera maiuscola anzichè utilizzare gli spazi, tutte le successive parole hanno a loro volta la lettera iniziale maiuscola. Per esempio, `DesertEagle`, `RocketPistol`, e `UnaSerieDiParole`.
 
-See [Cases](#terms-cases).
+Vedi [Casi](#terms-cases).
 
 <a name="2.1.2"></a>
-#### 2.1.2 Never Use Spaces ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.2 Mai Usare Gli Spazi ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-Re-enforcing [2.1.1](#2.1.1), never use spaces. Spaces can cause various engineering tools and batch processes to fail. Ideally your project's root also contains no spaces and is located somewhere such as `D:\Project` instead of `C:\Users\My Name\My Documents\Unreal Projects`.
+Ripetendo quanto detto in precedenza [2.1.1](#2.1.1), non bisogna usare gli spazi. Gli spazi causano fallimenti in vari engineering tools e nei batch process. Idealmente anche la root del tuo progetto non dovrebbe contenere spazi e dovrebbe trovari in una cartella come `D:\Project` anzichè `C:\Users\My Name\My Documents\Unreal Projects`.
 
 <a name="2.1.3"></a>
-#### 2.1.3 Never Use Unicode Characters And Other Symbols ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 2.1.3 Non Usare Caratteri Unicode o Altri Simboli ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-If one of your game characters is named 'Zoë', its folder name should be `Zoe`. Unicode characters can be worse than [Spaces](#2.1.2) for engineering tool and some parts of UE4 don't support Unicode characters in paths either.
+Se uno dei tuoi personaggi si chiama 'Zoë', la sua cartella dovrà essere nominata `Zoe`. I caratteri Unicode possono essere peggiore degli [Spazi](#2.1.2) per gli engineering tool e alcune directory di UE4 non supportano completamente i caratteri Unicode.
 
-Related to this, if your project has [unexplained issues](https://answers.unrealengine.com/questions/101207/undefined.html) and your computer's user name has a Unicode character (i.e. your name is `Zoë`), any project located in your `My Documents` folder will suffer from this issue. Often simply moving your project to something like `D:\Project` will fix these mysterious issues.
+Collegato a questo, se il tuo progetto ha [Errori inaspettati](https://answers.unrealengine.com/questions/101207/undefined.html) e l'username del tuo computer ha caratteri Unicode (es il tuo nome è `Zoë`), ed è posizionato nella cartella `My Documents` allora soffrirà di questo problema. Per risolverlo ti basterà semplicemente spostare il tuo progetto in una directory come `D:\Project`.
 
-Using other characters outside `a-z`, `A-Z`, and `0-9` such as `@`, `-`, `_`, `,`, `*`, and `#` can also lead to unexpected and hard to track issues on other platforms, source control, and weaker engineering tools.
+Usare caratteri diversi da `a-z`, `A-Z` e `0-9` ad esempio `@`, `-`, `_`, `,`, `*`, e `#` possono portare ad errori inaspettati e difficili da rilevare su altre piattaforme, su sistemi di versioning e su engineering tool non predisposti.
+
 
 <a name="2.2"></a>
 <a name="structure-top-level"><a>
-### 2.2 Use A Top Level Folder For Project Specific Assets ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 2.2 Usa Una Cartella Di Primo Livello Per Assets Del Progetto ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
-All of a project's assets should exist in a folder named after the project. For example, if your project is named 'Generic Shooter', _all_ of it's content should exist in `Content/GenericShooter`.
+Tutti gli asset del progetto dovrebbero esistere in una cartella con il nome del progetto. Per esempio, se il tuo progetto si chiama 'Generi Shooter', _tutti_ i suoi contenuti dovrebbero trovarsinella cartella `Content/GenericShooter`.
 
-> The `Developers` folder is not for assets that your project relies on and therefore is not project specific. See [Developer Folders](#2.3) for details about this.
+> la cartella `Developers` non è per gli asset su cui il tuo progetto si basa e non è collegata al singolo progetto. Vedi [Cartelle Developers](#2.3) per maggiori dettagli.
 
-There are multiple reasons for this approach.
+Ci sono molteplici ragioni per cui si usa questo approccio.
 
 <a name="2.2.1"></a>
 #### 2.2.1 No Global Assets
