@@ -2,7 +2,7 @@
 
 *Un approccio ragionevole ad Unreal Engine 4*
 
-Pesamente ispirato da [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
+Pesantemente ispirato da [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
 
 [![Analytics](https://ga-beacon.appspot.com/UA-80567399-1/repo?useReferrer)](#) ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
@@ -249,7 +249,7 @@ Quando nomini un asset usa queste tabelle per determinare prefisso e suffisso da
 
 <a name="anc-ai"></a>
 <a name="1.2.3"></a>
-### 1.2.3 Intelligence Artificiale ![#](https://img.shields.io/badge/lint-supported-green.svg)
+### 1.2.3 Intelligenza Artificiale ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | Tipologia Asset         | Prefisso   | Suffisso   | Note                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
