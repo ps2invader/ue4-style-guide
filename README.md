@@ -55,7 +55,6 @@ Ci sono differenti modi con cui puoi nominare qualcosa. Ecco alcune tipologie:
 <a name="terms-var-prop"></a>
 ##### Variabili / Proprietà
 
-The words 'variable' and 'property' in most contexts are interchangable. If they are both used together in the same context however:
 Le parole 'variabile' e 'proprietà' sono in molti contesti intercambiabili. Se però sono utilizzate insieme nello stesso contesto allora:
 
 <a name="terms-property"></a>
@@ -78,28 +77,31 @@ Questi principi sono stati adattati da [idomatic.js style guide](https://github.
 <a name="0.1"></a>
 ### 0.1 Se il tuo progetto UE4 ha già una guida allo stile, devi continuare a seguirla.
 
-If you are working on a project or with a team that has a pre-existing style guide, it should be respected.  Any inconsistency between an existing style guide and this guide should defer to the existing.
+Se stai lavorando su un progetto o con un team che ha già una guida pre-esistente allora dovresti rispettarla. Qualsiasi incosistenza tra la guida esistente e questa guida deve essere gestita tramite la guida esistente.
 
-Style guides should be living documents however and you should propose style guide changes to an existing style guide as well as this guide if you feel the change benefits all usages.
+Le guide allo stile dovrebbero essere documenti "vivi", si dovrebberò infatti proprre e attuare cambiamenti alle guide di stile esistenti (compresa questa) se si pensa che porti benefici a tutti.
 
-> #### "Arguments over style are pointless. There should be a style guide, and you should follow it."
+> #### "Polemizzare sullo stile è inutile. Ci deve essere una guida allo stile e bisogna seguirla."
 > [_Rebecca Murphey_](https://rmurphey.com)
 
 <a name="0.2"></a>
-### 0.2 All structure, assets, and code in any Unreal Engine 4 project should look like a single person created it, no matter how many people contributed.
+### 0.2 Tutta la struttura, gli asset, il codice in qualsiasi progetto UE4 devono sembrare scritti da una persona sola, non importa quante persone stanno lavorando al progetto.
 
-Moving from one project to another should not cause a re-learning of style and structure. Conforming to a style guide removes unneeded guesswork and ambiguities.
+Spostarsi da un progetto ad un altro non dovrebbe richiedere di re-imparare stile e struttura. Conformarsi a una guida allo stile rimuove lavoro inutile e ambiguità.
 
-It also allows for more productive creation and maintenance as one does not need to think about style, simply follow instructions. This style guide is written with best practices in mind, meaning that by following this style guide you will also minimize hard to track issues.
+Permette anche di essere più produttivi nella creazione e mantenimento del progetto poiché non è necessario pensare allo stile, basta semplicemente seguire le istruzioni. Questa guida è stata scritta con le migliori pratiche in mente, seguirla significa oltretutto minimizzare i problemi difficili da tracciare.
+
 
 <a name="0.3"></a>
-### 0.3 Friends do not let friends have bad style.
+### 0.3 Non lasciate gli amici avere un cattivo stile.
 
-If you see someone working either against a style guide or no style guide, try to correct them.
+Se vedete qualcuno lavorare non attenendosi alla guida o peggio ancora senza seguirla proprio allora provate a correggerlo.
 
-When working within a team or discussing within a community such as [Unreal Slackers](http://join.unrealslackers.org/), it is far easier to help and to ask for help when people are consistent. Nobody likes to help untangle someone's Blueprint spaghetti or deal with assets with names they can't understand.
+Quando lavorate in team o discutete in community come quella di [Unreal Slackers](http://join.unrealslackers.org/), è molto più facile aiutare qualcuno che ha un lavoro ordinato. Nessuno ama aiutare qualcuno che ha Blueprint fatti a spaghetti o assett con nomi incomprensibili.
 
-If you are helping someone who's work conforms to a different but consistent and sane style guide, you should be able to adapt to it. If they do not conform to any style guide, please direct them here.
+
+Se state aiutando qualcuno che lavora utilizzando una guida allo stile differente ma efficace allora sarete in grado di adattarvi ad essa.
+Se invece questa persona lavora non utilizzano nessuna guida allo stile allora dirigetela qui.
 
 <a name="0.4"></a>
 ### 0.4 A team without a style guide is no team of mine.
